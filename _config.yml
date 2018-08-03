@@ -16,5 +16,8 @@ baseurl: "/JUSTIN-RESUME" # the subpath of your site, e.g. /blog
 # Google-analytics
 google-analytics:
   id: ""
-
+  
+plugins:
+  - jekyll-seo-tag
+  
 exclude: ['package.json', 'src' , 'node_modules']
