@@ -48,6 +48,7 @@
 
 .contents-right {
   @media only screen and (min-width: $cut) {
+    padding-top: 20px;
     float: right;
     margin-top: -5%;
     width: 48%;

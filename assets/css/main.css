@@ -3794,7 +3794,7 @@ sup, sub {
     width: 30%; } }
 
 .devicon {
-  font-size: 4rem; }
+  font-size: 3rem; }
 
 @media only screen and (min-width: 550px) {
   .contents-right-about {
@@ -3893,6 +3893,7 @@ sup, sub {
 
 @media only screen and (min-width: 550px) {
   .contents-right {
+    padding-top: 20px;
     float: right;
     margin-top: -5%;
     width: 48%; } }

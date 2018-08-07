@@ -3793,6 +3793,9 @@ sup, sub {
     margin-left: 0;
     width: 30%; } }
 
+.devicon {
+  font-size: 4rem; }
+
 @media only screen and (min-width: 550px) {
   .contents-right-about {
     padding: 20px 0px 0px 0px;
@@ -3802,15 +3805,12 @@ sup, sub {
 
 .button {
   background-color: red;
-  outline: 4px solid green;
-  border-style: solid;
-  border-width: medium;
   color: white;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px; }
+  font-size: 20px; }
 
 @media only screen and (min-width: 550px) {
   .images-right {

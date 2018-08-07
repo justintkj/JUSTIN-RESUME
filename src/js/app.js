@@ -209,7 +209,10 @@ var Messenger = function(el){
 console.clear();
 var messenger = new Messenger($('#messenger'));
 
-var slideIndexs = [0,1,2];
+var slideIndex = 0;
+var slideIndex1 = 1;
+var slideIndex2 = 2;
+
 carousel();
 
 function carousel() {
@@ -218,10 +221,17 @@ function carousel() {
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none"; 
     }
-    slideIndexs = slideIndexs.map(function(val){val ++; if(val > x.length)return val-x.length;});
-    console.log(slideIndexs);
-    for(i =0; i < slideIndexs.length; i++) {
-          x[slideIndexs[i]-1].style.display = "block"; 
-    }
-    setTimeout(carousel, 1000); // Change image every 1 seconds
+    slideIndex++;
+    slideIndex1++;
+    slideIndex2++;
+
+    if (slideIndex > x.length) {slideIndex = 1} 
+    if (slideIndex1 > x.length) {slideIndex1 = 1} 
+    if (slideIndex2 > x.length) {slideIndex2 = 1} 
+
+    x[slideIndex-1].style.display = "block"; 
+    x[slideIndex1-1].style.display = "block"; 
+    x[slideIndex2-1].style.display = "block"; 
+
+    setTimeout(carousel, 1000); // Change image every 2 seconds
 }
