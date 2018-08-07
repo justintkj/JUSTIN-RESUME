@@ -3562,7 +3562,7 @@ h1, h2, h3, h4, stong {
   margin-top: 1em;
   padding-top: 1em;
   line-height: 1.25;
-  color: #333; }
+  color: white; }
 
 h1 {
   font-size: 2.5rem; }
@@ -3636,6 +3636,17 @@ sup, sub {
     width: 100% !important;
     height: 100vh !important; }
 
+#messenger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #FFF;
+  transform: translate(-50%, -50%);
+  font-family: monospace;
+  font-size: 50px;
+  white-space: nowrap;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.9); }
+
 .header {
   z-index: 1;
   text-align: center;
@@ -3672,6 +3683,12 @@ sup, sub {
     text-decoration: none;
     font-size: 15px;
     margin: 10px; }
+    .header-links .link:hover {
+      color: #1a222c;
+      background: #FF0000; }
+    .header-links .link:active {
+      color: #1a222c;
+      background: #FFF; }
     @media only screen and (min-width: 550px) {
       .header-links .link {
         font-size: 20px; } }
@@ -3693,7 +3710,7 @@ sup, sub {
     transition: all .7s; }
     .header-icons .icon:hover {
       color: #1a222c;
-      background: #FFF; }
+      background: #FF0000; }
     .header-icons .icon:active {
       color: #1a222c;
       background: #FFF; }
@@ -3732,48 +3749,122 @@ sup, sub {
       color: #4B5664; }
 
 #about {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 960px; }
-  @media only screen and (min-width: 550px) {
-    #about {
-      width: 80%; } }
-
-.tech {
-  margin: 10px; }
-
-.user {
-  text-align: center;
-  font-size: 60px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-  .user p {
-    font-size: 16px; }
-  @media only screen and (min-width: 550px) {
-    .user {
-      flex-wrap: nowrap;
-      font-size: 75px; } }
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  background: white; }
 
-.user-details {
+.user-details-about h1 {
   text-align: center;
-  margin: 5px auto; }
+  color: black; }
 
-.testimonials {
+.user-projects-about {
+  margin: 20px auto; }
+  .user-projects-about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; }
+  .user-projects-about h1 {
+    color: black;
+    font-weight: 1000;
+    font-size: 60px;
+    margin: 0; }
+  .user-projects-about h2 {
+    color: black;
+    margin: 0; }
+  .user-projects-about h5 {
+    color: black;
+    margin: 0; }
+  .user-projects-about li {
+    color: black;
+    font-size: 1.1rem; }
+  .user-projects-about p {
+    color: black;
+    margin-right: 5px; }
+  .user-projects-about a {
+    color: black;
+    border-color: black; }
+
+@media only screen and (min-width: 550px) {
+  .contents {
+    color: white;
+    margin-left: 0;
+    width: 30%; } }
+
+.devicon {
+  font-size: 4rem; }
+
+@media only screen and (min-width: 550px) {
+  .contents-right-about {
+    padding: 20px 0px 0px 0px;
+    float: right;
+    margin-top: -5%;
+    width: 48%; } }
+
+.button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
   text-align: center;
-  margin: 5px auto; }
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px; }
+
+@media only screen and (min-width: 550px) {
+  .images-right {
+    float: right;
+    width: 48%; } }
+@media only screen and (min-width: 550px) {
+  .images-right img {
+    float: right; } }
+
+@media only screen and (min-width: 550px) {
+  .images-left-about img {
+    padding: 0px 0px 0px 200px;
+    float: left;
+    width: 25%; } }
+
+.project-link {
+  display: block;
+  width: 100px;
+  margin: 10px 0px;
+  padding: 5px;
+  color: #fff;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out; }
+  .project-link:hover {
+    background-color: #54516A;
+    border-color: #54516A;
+    color: #fff;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in; }
+  .project-link:active {
+    background-color: #54516A;
+    border-color: #54516A;
+    color: #fff;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in; }
 
 #projects {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 90%;
-  max-width: 960px;
-  margin: 0 auto; }
-  @media only screen and (min-width: 550px) {
-    #projects {
-      width: 80%; } }
+  width: 100%;
+  margin: 0 auto;
+  background: url(../../background1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: 100% 100%;
+  -o-background-size: cover;
+  background-size: 100% 100%; }
+
+.user-details {
+  text-align: center; }
 
 .user-projects {
   margin: 20px auto; }
@@ -3782,15 +3873,21 @@ sup, sub {
     height: auto;
     border-radius: 5px; }
   .user-projects h5 {
+    color: white;
     margin: 0; }
   .user-projects li {
-    color: #1a222c;
+    color: white;
     font-size: 1.1rem; }
   .user-projects p {
+    color: white;
     margin-right: 5px; }
+  .user-projects a {
+    color: white;
+    border-color: white; }
 
 @media only screen and (min-width: 550px) {
   .contents {
+    color: white;
     margin-left: 0;
     width: 48%; } }
 
@@ -3821,9 +3918,9 @@ sup, sub {
   width: 100px;
   margin: 10px 0px;
   padding: 5px;
-  color: #1a222c;
-  background-color: transparent;
-  border: 1px solid #1a222c;
+  color: #fff;
+  background-color: #fff;
+  border: 1px solid #fff;
   border-radius: 10px;
   text-align: center;
   outline: none;

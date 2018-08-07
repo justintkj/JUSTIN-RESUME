@@ -1,38 +1,133 @@
 #about {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 960px;
-  @media only screen and (min-width: $cut) {
-    width: 80%;
-  }
-}
-
-.tech {
-  margin: 10px;
-}
-
-.user {
-  text-align: center;
-  font-size: 60px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+ display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+}
+.user-details-about {
+  h1{
+  text-align: center;
+  color : black;
+  }
+}
+.user-projects-about {
+  margin: 20px auto;
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  h1 {
+    color:black;
+    font-weight:1000;
+    font-size: 60px;
+    margin: 0;
+  }
+  h2 {
+    color:black;
+    margin: 0;
+  }
+  h5 {
+  color:black;
+    margin: 0;
+  }
+  li {
+    color:black;
+    font-size: 1.1rem;
+  }
   p {
-    font-size: 16px;
+    color:black;
+    margin-right: 5px;
   }
+  a {
+    color:black;
+    border-color: black;
+  }
+}
+
+.contents {
   @media only screen and (min-width: $cut) {
-    flex-wrap: nowrap;
-    font-size: 75px;
+    color:white;
+    margin-left: 0;
+    width: 30%;
   }
 }
 
-.user-details {
-  text-align: center;
-  margin: 5px auto;
+.devicon {
+  font-size: 3rem
 }
 
-.testimonials {
+.contents-right-about {
+  @media only screen and (min-width: $cut) {
+    padding: 20px 0px 0px 0px;
+    float: right;
+    margin-top: -5%;
+    width: 48%;
+  }
+}
+.button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+.images-right {
+  @media only screen and (min-width: $cut) {
+    float: right;
+    width: 48%;
+  }
+  img {
+    @media only screen and (min-width: $cut) {
+      float: right;
+    }
+  }
+}
+
+.images-left-about {
+  img {
+    @media only screen and (min-width: $cut) {
+      padding: 0px 0px 0px 200px;
+      float: left;
+      width: 25%;
+    }
+  }
+}
+
+.project-link {
+  display: block;
+  width: 100px;
+  margin: 10px 0px;
+  padding: 5px;
+  color: #fff;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
   text-align: center;
-  margin: 5px auto;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+  &:hover {
+    background-color: $purple;
+    border-color: $purple;
+    color: #fff;
+    transition: color 0.3s ease-in,
+                background-color 0.3s ease-in,
+                border-color 0.3s ease-in;
+  }
+  &:active {
+    background-color: $purple;
+    border-color: $purple;
+    color: #fff;
+    transition: color 0.3s ease-in,
+                background-color 0.3s ease-in,
+                border-color 0.3s ease-in;
+  }
 }

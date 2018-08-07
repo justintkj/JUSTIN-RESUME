@@ -32,8 +32,11 @@
   <div class="header">
       <h1>
         <span class="site-title">Justin Tan</span>
-        <span class="site-description">Software Engineer</span>
+        <div id="messenger"></div>
       </h1>
+      <h1>
+      </h1> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
       <div class="header-icons">
         <a aria-label="Send email" href="mailto:justintankunjie@gmail.com"><i class="icon fa fa-envelope"></i></a>
         <a aria-label="My Facebook" target="_blank" href="https://www.facebook.com/justin.lovesthemoon"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
@@ -46,41 +49,35 @@
         <a class="link" href="#testimonials" data-scroll>Testimonials</a>
       </div>
   </div>
-  <a class="down" href="#About Me" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </div>
 
       <section id="about">
-         <div class="user-details">
-  <h1> My Expertise </h1>
-  <p> Undergraduate in NUS, Computer Engineering. </p>
+         <div class="user-details-about">
+  <h1> About Me </h1>
 </div>
-  <div class="user">
-    <div class="tech">
-      <h2>Design</h2>
-      <i class="devicon-html5-plain-wordmark"></i>
-      <i class="devicon-bootstrap-plain-wordmark colored"></i>
-      <i class="devicon-sass-original colored"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
-    </div>
-    <div class="tech">
-      <h2>Code</h2>
-      <i class="devicon-javascript-plain colored"></i>
-      <i class="devicon-react-original-wordmark colored"></i>
-      <i class="devicon-nodejs-plain-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
-    </div>
-    <div class="tech">
-      <h2>Tools</h2>
-      <i class="devicon-git-plain"></i>
-      <i class="devicon-gulp-plain colored"></i>
-      <i class="devicon-atom-original-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
-    </div>
+<div class="user-projects-about">
+  <div class="images-left-about">
+    <img alt="PocketBook" src="/assets/img/Myself.jpeg" />
+  </div>
+  <div class="contents-right-about">
+    <h1> Justin Tan Kun Jie</h1>
+	<h2> Student / BackEnd Engineer</h2>
+	<div class = "devicon">
+		<i class="devicon-c-plain-wordmark colored"></i>
+		<i class="devicon-csharp-plain-wordmark colored"></i>
+		<i class="devicon-java-plain-wordmark colored"></i>
+		<i class="devicon-python-plain-wordmark colored"></i>
+		<i class="devicon-android-plain-wordmark colored"></i>
+		<i class="devicon-github-plain-wordmark colored"></i>
+		<i class="devicon-confluence-plain-wordmark colored"></i>
+	</div>
+    <p>I am a student in NUS, pursuing a degree in Computer Engineering. I have experience and academic excellence in Java(& java8), python (Machine Learning) and C. Constantly looking for new challenges.</p>
+    <div class = "button">
+    	<a href="assets/img/resume.pdf" class="button" download><i class="fa fa-download"></i>Download CV</a>
+	</div>
+  </div>
 </div>
-
       </section>
       <section id="projects">
         <div class="user-details">
@@ -93,26 +90,63 @@
   <div class="contents">
     <h3> Cat Survival Game </h3>
     <ul>
-      <li> Featured Skills</li>
+      <li> Description</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="https://github.com/justintkj/CatSurvivalGame">Check it out</a>
+    <p>A 2D java survival game. Cats and rats will spawn randomly in the map, where the cat attempts to eliminate them through firing projectiles. Highscore x`ard keeps track of all-time high score of user locally.</p>
+    <a class="project-link" href="https://github.com/justintkj/CatSurvivalGame">Code @ github</a>
   </div>
 </div>
 <div class="user-projects">
   <div class="images-left">
-    <img alt="mountains" src="/assets/img/skate.jpg" />
+    <img alt="PocketBook" src="/assets/img/PocketBook.png" />
   </div>
   <div class="contents-right">
-    <h3> Project Title </h3>
+    <h3> PocketBook </h3>
     <ul>
-      <li> Featured Skills</li>
+      <li> Description</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <p>An addressbook CLI application made with java. It is created for a module requirement in NUS (CS2103) with a team of 4 people. Grade : A+</p>
+    <a class="project-link" href="https://github.com/CS2103AUG2017-F09-B3/main">Code @ github</a>
   </div>
 </div>
-
+<div class="user-projects">
+  <div class="images-right">
+    <iframe width="650" height="300"src="https://www.youtube.com/embed/A_GjkbOcCqc">
+    </iframe>
+  </div>
+  <div class="contents-right">
+    <h3> Autonomous Arduino Vehicle with Bluetooth control </h3>
+    <ul>
+      <li> Description</li>
+    </ul>
+    <p>As part of Ngee Ann Polytechnic's half-year FYP, an arduino bluetooth - controlled vehicle with autonomy option is created. Sonar Sensors are used in polling method. Grade: A</p>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
+    <img class="mySlides" src="/assets/img/Frontback.gif" width = 180 height = 315 />
+    <img class="mySlides" src="/assets/img/Jump.gif" width = 180 height = 315 />
+    <img class="mySlides" src="/assets/img/Jumpleftright.gif" width = 180 height = 315 />
+    <img class="mySlides" src="/assets/img/Number6.gif" width = 180 height = 315 />
+    <img class="mySlides" src="/assets/img/SideStep.gif" width = 180 height = 315 />
+    <img class="mySlides" src="/assets/img/Squadturnclap.gif" width = 180 height = 315 />
+    <img class="mySlides" src="/assets/img/Turnclap.gif" width = 180 height = 315 />
+    <img class="mySlides" src="/assets/img/Wavehands.gif" width = 180 height = 315 />
+    <img class="mySlides" src="/assets/img/Window360.gif" width = 180 height = 315 />
+    <img class="mySlides" src="/assets/img/Windowcleaning.gif" width = 180 height = 315 />
+  </div>
+  <div class="contents-right">
+    <h3> Dance Dance </h3>
+    <ul>
+      <li> Description</li>
+    </ul>
+    <p>Detect labelled dance moves using Machine Learning, coursework CG3002. Grade: A
+      <br> <b>Arduino</b>: Obtain sensor values and output to the rasphberry Pi 
+      <br> <b>Rasphberry Pi</b>: Load sensor values into Machine Learning model, send the prediction to the server 
+      <br> <b>Machine Learning</b>: Processing raw sensor data and to output the prediction.</p>
+    <a class="project-link" href="https://github.com/huyuanrong/CG3002-NUS-AY1718-Sem2-Grp1-">Code @ github</a>
+  </div>
+</div>
       </section>
       <section id="testimonials">
         <div class="testimonials">
@@ -127,11 +161,35 @@
     <ul>
       <li> Software Engineer - BackEnd</li>
     </ul>
-    <p>Description of work done in Ninjavan.</p>
+    <p>Backend Software Engineer for Driver app using Java8 and play Framework. Proficient in asynchronous programming and REST Api. Uses JIRA and BitBucket tool for project managemenet.</p>
     <a class="project-link" href="sample-testimonials.pdf">Testimonial</a>
   </div>
 </div>
-
+<div class="testimonials-details">
+  <div class="images-left">
+    <img alt="Singapore Armed Forces- Signal Institute" src="/assets/img/SAFlogo.png" />
+  </div>
+  <div class="contents-right">
+    <h3> Signal Institute </h3>
+    <ul>
+      <li> Head Logistic Support Branch - Lieutenant</li>
+    </ul>Manages logisitical support in the camp.</p>
+    <a class="project-link" href="SAF-Testimonial.pdf">Testimonial</a>
+  </div>
+</div>
+<div class="testimonials-details">
+  <div class="images-right">
+    <img alt="ST-Aerospace" src="/assets/img/ST-Aerospace.jpg" />
+  </div>
+  <div class="contents">
+    <h3> ST-Aerospace </h3>
+    <ul>
+      <li>Electrical Engineer </li>
+    </ul>
+    <p>Manages Electrical Load Analysis reports for Passenger to Freighter airplane conversion using Microsoft Excel Basic Macro and tools. Verifies electrical schematic diagrams as a secondary task. Grade: A+.</p>
+    <a class="project-link" href="STaero-Testimonial.jpg">Testimonial</a>
+  </div>
+</div>
       </section>
         
       <footer class="footer">

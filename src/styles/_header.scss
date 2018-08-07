@@ -11,8 +11,18 @@
     width:100% !important;
     height:100vh !important;
   }
+} 
+#messenger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color:#FFF;
+  transform: translate(-50%, -50%);
+  font-family: monospace;
+  font-size: 50px;
+  white-space: nowrap;
+  text-shadow: 0 2px 2px rgba(#000, 0.9);
 }
-
 .header {
   z-index: 1;
   text-align: center;
@@ -52,6 +62,14 @@
     text-decoration: none;
     font-size: 15px;
     margin: 10px;
+    &:hover {
+      color: $main;
+      background: #FF0000;
+    }
+    &:active {
+      color: $main;
+      background: #FFF;
+    }
     @media only screen and (min-width:$cut){
       font-size: 20px;
     }
@@ -75,7 +93,7 @@
     transition: all .7s;
     &:hover {
       color: $main;
-      background: #FFF;
+      background: #FF0000;
     }
     &:active {
       color: $main;
