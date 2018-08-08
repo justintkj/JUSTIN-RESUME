@@ -3783,6 +3783,12 @@ sup, sub {
   .user-projects-about p {
     color: black;
     margin-right: 5px; }
+  .user-projects-about p1 {
+    display: inline;
+    background-color: white;
+    margin-right: 5px;
+    font-size: 20px;
+    padding: 23px 20px; }
   .user-projects-about a {
     color: black;
     border-color: black; }
@@ -3794,7 +3800,7 @@ sup, sub {
     width: 30%; } }
 
 .devicon {
-  font-size: 4rem; }
+  font-size: 3rem; }
 
 @media only screen and (min-width: 550px) {
   .contents-right-about {
@@ -3893,6 +3899,7 @@ sup, sub {
 
 @media only screen and (min-width: 550px) {
   .contents-right {
+    padding-top: 20px;
     float: right;
     margin-top: -5%;
     width: 48%; } }
