@@ -3890,12 +3890,10 @@ sup, sub {
     color: white;
     margin-right: 5px; }
   .user-projects a {
-    color: white;
-    border-color: white; }
+    background: transparent; }
 
 @media only screen and (min-width: 550px) {
   .contents {
-    color: white;
     margin-left: 0;
     width: 48%; } }
 
@@ -3927,9 +3925,6 @@ sup, sub {
   width: 100px;
   margin: 10px 0px;
   padding: 5px;
-  color: #fff;
-  background-color: #fff;
-  border: 1px solid #fff;
   border-radius: 10px;
   text-align: center;
   outline: none;
@@ -3965,15 +3960,42 @@ sup, sub {
       color: #4B5664; }
 
 #testimonials {
-  background: black; }
-  #testimonials *, #testimonials *:before, #testimonials *:after {
-    box-sizing: border-box; }
-  #testimonials html, #testimonials body {
-    height: 100%; }
+  height: 650px;
+  background: white;
+  box-sizing: border-box; }
+  #testimonials body {
+    color: #444;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5; }
+  #testimonials h1 {
+    color: black;
+    text-align: center; }
+
+i-l {
+  position: relative;
+  left: 300px;
+  color: red;
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 30rem; }
+
+i-r {
+  position: relative;
+  right: 300px;
+  color: red;
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 30rem; }
+
+.container .fa-quote-left {
+  text-shadow: 3px 6px #272634; }
+
+.container .fa-quote-right {
+  text-shadow: 3px 6px #272634; }
 
 .slider {
   height: 100%;
   position: relative;
+  top: 0px;
   overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3990,6 +4012,10 @@ sup, sub {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  .slider h2 {
+    color: black; }
+  .slider p {
+    color: black; }
 
 .slider__nav {
   width: 12px;
@@ -4020,14 +4046,11 @@ sup, sub {
 .slider__nav:checked:nth-of-type(3) ~ .slider__inner {
   left: -200%; }
 
-.slider__nav:checked:nth-of-type(4) ~ .slider__inner {
-  left: -300%; }
-
 .slider__inner {
   position: absolute;
-  top: 0;
+  top: -80px;
   left: 0;
-  width: 400%;
+  width: 300%;
   height: 100%;
   -webkit-transition: left 0.4s;
   transition: left 0.4s;
@@ -4041,7 +4064,7 @@ sup, sub {
 
 .slider__contents {
   height: 100%;
-  padding: 2rem;
+  padding: 6rem;
   text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4076,7 +4099,9 @@ sup, sub {
 .slider__txt {
   color: #999;
   margin-bottom: 3rem;
-  max-width: 300px; }
+  max-width: 500px;
+  font-size: 1.5rem;
+  font-style: Helvetica; }
 
 @-webkit-keyframes check {
   50% {
